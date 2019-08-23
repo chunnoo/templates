@@ -1,0 +1,83 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass[11pt,norsk,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[norsk]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{mathabx}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usetikzlibrary{shapes, calc}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{verbatim}
+\usetikzlibrary{decorations.pathreplacing}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}{}}
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+\linespread{1.15}
+
+\renewcommand{\thesection}{Task \arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+\renewcommand{\thesubsubsection}{\arabic{section}.\alph{subsection}.\roman{subsubsection}}
+
+\mathcode`\*="8000
+{\catcode`\*\active\gdef*{\cdot}}
+
+\newcommand{\lapl}[1]{\mathscr{L}\left\{#1\right\}}
+\newcommand{\invlapl}[1]{\mathscr{L}^{-1}\left\{#1\right\}}
+\newcommand{\ziint}{\int_0^{\infty}}
+\newcommand{\zi}{_0^{\infty}}
+\newcommand{\clint}[3]{\left[ #1 \right]_{#2}^{#3}}
+\newcommand{\ppclint}[1]{\clint{#1}{-\pi}{\pi}}
+\newcommand{\gamfunc}[1]{\Gamma \left( #1 \right)}
+\newcommand{\ppint}{\int_{-\pi}^{\pi}}
+\newcommand{\bpar}[1]{\left( #1 \right)}
+
+\tikzset{every entity/.style={draw=black, fill=white!20}}
+\tikzset{every attribute/.style={draw=black, fill=white!20}} \tikzset{every relationship/.style={draw=black, fill=white!20}}
+
+
+\title{
+    \vspace{2in}
+    \textmd{\textbf{Assignment Number}}\\
+    \normalsize\vspace{0.1in}\small{\today}\\
+    \vspace{0.1in}\large{\textit{Course} \\ Course code}
+    \vspace{3in}
+}
+
+\author{\textbf{Mathias Chunnoo}}
+
+\date{}
+
+\cfoot{\hspace*{2.6cm} Page \thepage\ of \pageref{LastPage}}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+\section{First}
+First content
+
+
+\section{Second}
+\subsection{Second sub}
+Second sub content
+
+\end{document}
