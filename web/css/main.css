@@ -1,0 +1,17 @@
+html,
+body {
+  background-color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  background-color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+#canvas {
+  width: 512;
+  height: 512;
+}
